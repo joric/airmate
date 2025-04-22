@@ -127,7 +127,7 @@ So the resulting sequence for the "Speed" command is 24 values including stop du
 
 `1330,438,1258,440,410,1288,1260,438,1258,440,384,1312,386,1312,412,1286,386,1312,386,1312,1260,440,384,8106`
 
-This web interface can decode frequencies back into F12 format: https://joric.github.io/airmate/
+This web interface can decode captured frequencies back into F12 format: https://joric.github.io/airmate/
 
 ## Roomba
 
