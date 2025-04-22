@@ -99,6 +99,24 @@ Example (F12 format): **{37.9k,422}<1,-3|3,-1>(D:3,S:1,F:8,-80)***
 
 See http://www.hifi-remote.com/johnsfine/DecodeIR.html for details.
 
+Actual Airmate Codes in F12 (see https://github.com/probonopd/irdb/pull/30):
+
+functionname|protocol|device|subdevice|function
+--|--|--|--|--
+Oscillation | F12|3|1|9
+Timer | F12|3|1|17
+Fan mode | F12|3|1|33
+Speed | F12|3|1|65
+Light | F12|3|1|99
+Shutdown | F12|3|1|129
+Presets | F12|3|1|195
+
+For example, Speed (F12,3,1,65) is encoded into:
+
+1330,438,1258,440,410,1288,1260,438,1258,440,384,1312,386,1312,412,1286,386,1312,386,1312,1260,440,384,8106
+
+Which is: 24 values, protocol=F12, bits=110110000010, D=3, S=1, F=65.
+
 ## Roomba
 
 There's also a small project for Roomba 620 (in progress). I tried to utilize IR sender but it
