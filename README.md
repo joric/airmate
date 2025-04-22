@@ -122,7 +122,7 @@ F12 protocol pulse spec is `<1,-3|3,-1>` (ZeroPulseSeq=1,-3; OnePulseSeq=3,-1) m
 
 (Durations are not exact, they were captured from the actual IR remote and decoded backwards but they work.)
 
-I.e. [+1330,-438] is `<+3,-1>` (LED On) because it's about 1320 (3x 440) time units followed by 440 (1x 440) time units.
+I.e. [+1330,-438] is `<+3,-1>` (=1) because it's about 1320 (3x 440) time units followed by 440 (1x 440) time units.
 
 LED on/off durations start from on and alternate to the end. Durations use carrier frequency units (1/38000s).
 So the resulting sequence for the "Speed" command is 24 values including stop duration at the end:
