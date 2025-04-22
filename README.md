@@ -119,7 +119,7 @@ Then we apply pulse specs, `<1,-3|3,-1>` scheme (ZeroPulseSeq=1,-3; OnePulseSeq=
 `[+1330,-438],[+1258,-440],[+410,-1288],[+1260,-438],[+1258,-440],[+384,-1312],... =  [1],[1],[0],[1],[1],[0],...`
 
 LED on/off durations start from on and alternate to the end. Durations use carrier frequency units (1/38000s).
-So the resulting sequence for the "Speed" command is (24 values):
+So the resulting sequence for the "Speed" command is (24 values with the stop in the end):
 
 `1330,438,1258,440,410,1288,1260,438,1258,440,384,1312,386,1312,412,1286,386,1312,386,1312,1260,440,384,8106`
 
