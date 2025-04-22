@@ -99,6 +99,8 @@ Example (F12 format): **{37.9k,422}<1,-3|3,-1>(D:3,S:1,F:8,-80)***
 
 See http://www.hifi-remote.com/johnsfine/DecodeIR.html for details.
 
+## Airmate
+
 Actual Airmate fan codes in F12 format (see https://github.com/probonopd/irdb/pull/30):
 
 functionname|protocol|device|subdevice|function
