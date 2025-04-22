@@ -123,7 +123,7 @@ So the resulting sequence for the "Speed" command is 24 values including stop du
 
 `1330,438,1258,440,410,1288,1260,438,1258,440,384,1312,386,1312,412,1286,386,1312,386,1312,1260,440,384,8106`
 
-(Durations are not exact, they were captured from the actual physical device and decoded backwards but they work.)
+(Durations are not exact, they were captured from the actual IR remote and decoded backwards but they work.)
 
 ## Roomba
 
