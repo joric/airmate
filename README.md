@@ -1,6 +1,6 @@
-# Mystery
+# Airmate
 
-A small ESP-12F (ESP8266)-based project for DIY IR controller for the Mystery MSF-2414 fan, hence the name.
+A small ESP-12F (ESP8266)-based project for DIY IR controller for the Airmate Mystery MSF-2414 fan, hence the name.
 
 Related IRDB PR: https://github.com/probonopd/irdb/pull/30
 
@@ -14,7 +14,7 @@ Solder as on the picture (GPIO15 pulled down to GND, EN pulled up to VCC).
 IR LED to GPIO4 (doesn't need a resistor).
 Hook up UART (RX to TXD0, TX to RXD0).
 To enable flash mode, short GPIO0 to GND during startup.
-Build and flash [IRSender.ino](https://github.com/joric/mystery/blob/master/IRSender/IRSender.ino)
+Build and flash [IRSender.ino](https://github.com/joric/airmate/blob/master/IRSender/IRSender.ino)
 (use Arduino IDE setup from [ESP8266-HTTP-IR-Blaster](https://github.com/mdhiggins/ESP8266-HTTP-IR-Blaster)).
 Check for the IR Sender address in your Wi-Fi router settings.
 
@@ -33,7 +33,7 @@ More pictures:
 
 ## Capturing and sending IR codes
 
-Use [IRCapture.ino](https://github.com/joric/mystery/blob/master/IRCapture/IRCapture.ino)
+Use [IRCapture.ino](https://github.com/joric/airmate/blob/master/IRCapture/IRCapture.ino)
 and Arduino Nano with VS1838 IR receiver (from 37 in 1 set) hooked up to pin D2 to capture IR codes.
 You can also capture and convert IR codes with [IrScrutinizer](https://github.com/bengtmartensson/IrScrutinizer/releases) and Arduino Nano
 with [GirsLite 1.0.2](https://github.com/bengtmartensson/AGirs/releases) firmware (hook up IR receiver module to pins D5, GND and 5V, check "Use receive for capture"
@@ -109,9 +109,9 @@ The serial port is located under the top cover (it can be lifted with bare hands
 mini-DIN connector (sadly mouse/keyboard PS/2 adapters can't be donors for that, they [won't fit](https://i.imgur.com/9b3O1Kg.jpg)).
 I've used 3.3V regulator and the unshielded ESP-12F module, so it fits under the top cover.
 
-* [RoombaSerial.ino](https://github.com/joric/mystery/blob/master/RoombaSerial/RoombaSerial.ino) (RoombaSerial sketch, mostly works fine, occasionally hangs, probably regulator is overheating)
-* [roomba_serial.sh](https://github.com/joric/mystery/blob/master/scripts/roomba_serial.sh) (RoombaSerial control script)
-* [roomba_ctrl.sh](https://github.com/joric/mystery/blob/master/scripts/roomba_ctrl.sh) (IRSender script, doesn't work yet)
+* [RoombaSerial.ino](https://github.com/joric/airmate/blob/master/RoombaSerial/RoombaSerial.ino) (RoombaSerial sketch, mostly works fine, occasionally hangs, probably regulator is overheating)
+* [roomba_serial.sh](https://github.com/joric/airmate/blob/master/scripts/roomba_serial.sh) (RoombaSerial control script)
+* [roomba_ctrl.sh](https://github.com/joric/airmate/blob/master/scripts/roomba_ctrl.sh) (IRSender script, doesn't work yet)
 
 IR timings grabbed with IrScrutinizer from a working [RCoid](http://rcoid.de/remotefiles.html) remote. Don't work yet (maybe need mode change).
 
