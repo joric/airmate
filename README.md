@@ -103,7 +103,7 @@ See http://www.hifi-remote.com/johnsfine/DecodeIR.html for details.
 
 Actual Airmate fan codes in F12 format (see https://github.com/probonopd/irdb/pull/30):
 
-functionname|protocol|device|subdevice|function
+function name|protocol|device|subdevice|function
 --|--|--|--|--
 Oscillation | F12|3|1|9
 Timer | F12|3|1|17
