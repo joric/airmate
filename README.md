@@ -116,7 +116,7 @@ Presets | F12|3|1|195
 For example, "Speed" (protocol=F12, D=3, S=1, F=65) encodes into bits=110110000010
 because D=3 (0x011), S=1 (0x01), F=65 (0x01000001) is `[110][1][10000010]` in MSB notation.
 
-F12 protocol pulse spec is `<1,-3|3,-1>` (ZeroPulseSeq=1,-3; OnePulseSeq=3,-1) means 3x on duration followed by 1x off duration is bit 1; 1x on duration followed by 3x off duration is bit 0.
+F12 protocol pulse spec is `<1,-3|3,-1>` (ZeroPulseSeq=1,-3; OnePulseSeq=3,-1) means 3x duration followed by 1x duration is bit 1; 1x duration followed by 3x duration is bit 0.
 
 `[+1330,-438],[+1258,-440],[+410,-1288],[+1260,-438],[+1258,-440],[+384,-1312],... = [1],[1],[0],[1],[1],[0],`
 
