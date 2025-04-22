@@ -148,8 +148,8 @@ function updateChart() {
 
   if (info) {
     hint += ' protocol=' + info.name;
-    hint += ' bits=' + info.bits;
     for (const [k,v] of Object.entries(info.param)) hint += ' '+k+'='+v;
+    hint += ' bits=' + info.bits;
   }
 
   $('#hint').text(hint);
