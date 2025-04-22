@@ -117,6 +117,8 @@ For example, Speed (F12,3,1,65) is encoded into:
 
 Which is: 24 values, protocol=F12, bits=110110000010, D=3, S=1, F=65.
 
+Function code F=65 is (110,1,10000010 = 011b,1b,01000001b in LSB notation).
+
 ## Roomba
 
 There's also a small project for Roomba 620 (in progress). I tried to utilize IR sender but it
