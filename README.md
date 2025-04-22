@@ -123,7 +123,7 @@ So the resulting sequence for the "Speed" command is (24 values including stop d
 
 `1330,438,1258,440,410,1288,1260,438,1258,440,384,1312,386,1312,412,1286,386,1312,386,1312,1260,440,384,8106`
 
-(These frequences are not exact as they were captured from the actual physical device and decoded backwards.)
+(These frequences are not exact 1x/3x as they were captured from the actual physical device and decoded backwards.)
 
 ## Roomba
 
