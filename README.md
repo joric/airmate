@@ -111,7 +111,7 @@ Light | F12|3|1|99
 Shutdown | F12|3|1|129
 Presets | F12|3|1|195
 
-For example, Speed (F12,3,1,65) is encoded into:
+For example, Speed (F12,3,1,65) is encoded into sequence of pulses `<1,-3|3,-1>`:
 
 1330,438,1258,440,410,1288,1260,438,1258,440,384,1312,386,1312,412,1286,386,1312,386,1312,1260,440,384,8106
 
