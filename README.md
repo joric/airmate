@@ -125,6 +125,8 @@ So the resulting sequence for the "Speed" command is 24 values including stop du
 
 (Durations are not exact, they were captured from the actual IR remote and decoded backwards but they work.)
 
+This web interface can decode frequencies back into F12 format: https://joric.github.io/airmate/
+
 ## Roomba
 
 There's also a small project for Roomba 620 (in progress). I tried to utilize IR sender but it
