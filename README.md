@@ -76,8 +76,6 @@ bursts of light at the carrier frequency. It's just a pulse width modulation (PW
 
 Pronto hex format takes carrier frequency into account, so every value is adjusted as 1000000*value/carrierFrequency.
 
-See examples here on the project WEB page.
-
 ### IRP format notation
 
 Example (F12 format): **{37.9k,422}<1,-3|3,-1>(D:3,S:1,F:8,-80)***
