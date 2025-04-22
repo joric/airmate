@@ -2,7 +2,7 @@
 
 A small ESP-12F (ESP8266)-based project for DIY IR controller for the Mystery MSF-2414 fan, hence the name.
 
-See IRDB PR: https://github.com/probonopd/irdb/pull/30
+Related IRDB PR: https://github.com/probonopd/irdb/pull/30
 
 ## Video
 
