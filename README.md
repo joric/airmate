@@ -99,7 +99,7 @@ Example (F12 format): **{37.9k,422}<1,-3|3,-1>(D:3,S:1,F:8,-80)***
 
 See http://www.hifi-remote.com/johnsfine/DecodeIR.html for details.
 
-Actual Airmate Codes in F12 (see https://github.com/probonopd/irdb/pull/30):
+Actual Airmate fan codes in F12 format (see https://github.com/probonopd/irdb/pull/30):
 
 functionname|protocol|device|subdevice|function
 --|--|--|--|--
@@ -111,13 +111,18 @@ Light | F12|3|1|99
 Shutdown | F12|3|1|129
 Presets | F12|3|1|195
 
-For example, Speed (F12,3,1,65) is encoded into sequence of pulses `<1,-3|3,-1>`:
+For example, "Speed" (protocol=F12, D=3, S=1, F=65) encodes into bits=110110000010
+because D=3 (0x011), S=1 (0x01), F=65 (0x01000001) is `[110][1][10000010]` in MSB notation.
 
-1330,438,1258,440,410,1288,1260,438,1258,440,384,1312,386,1312,412,1286,386,1312,386,1312,1260,440,384,8106
+Then we apply pulse specs, `<1,-3|3,-1>` scheme (ZeroPulseSeq=1,-3; OnePulseSeq=3,-1) means 3x on duration followed by 1x off duration is bit 1; 1x on duration followed by 3x off duration is bit 0.
 
-Which is: 24 values, protocol=F12, bits=110110000010, D=3, S=1, F=65.
+`[+1330,-438],[+1258,-440],[+410,-1288],[+1260,-438],[+1258,-440],[+384,-1312],... =  [1],[1],[0],[1],[1],[0],...`
 
-Function code F=65 is (110,1,10000010 = 011b,1b,01000001b in LSB notation).
+LED on/off durations start from on and alternating to the end. Durations use carrier frequency units (1/38000s).
+So the resulting sequence for the "Speed" command is (24 values):
+
+`1330,438,1258,440,410,1288,1260,438,1258,440,384,1312,386,1312,412,1286,386,1312,386,1312,1260,440,384,8106`
+
 
 ## Roomba
 
