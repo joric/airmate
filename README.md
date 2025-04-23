@@ -124,7 +124,7 @@ F12 protocol pulse spec is `<1,-3|3,-1>` (ZeroPulseSeq=1,-3; OnePulseSeq=3,-1) m
 
 I.e. [+1330,-438] is `<+3,-1>` ("One") because it's about 1320 (3x 440) time units followed by 440 (1x 440) time units.
 
-LED on/off durations start from on and alternate to the end. Durations use carrier frequency units (1/38000s).
+LED on/off durations start from on and alternate to the end. All durations are in microseconds.
 So the resulting sequence for the "Speed" command is 24 values including stop duration at the end:
 
 `1330,438,1258,440,410,1288,1260,438,1258,440,384,1312,386,1312,412,1286,386,1312,386,1312,1260,440,384,8106`
